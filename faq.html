@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="t.faq">FAQ — Prism+</title>
+<meta name="description" content="Frequently asked questions about Prism+.">
+<meta name="theme-color" content="#0b0b10">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/extra.css">
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/i18n-ext.js" defer></script>
+</head>
+<body>
+<header class="site"><div class="wrap bar">
+<a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="28" height="28">Prism<b>+</b></a>
+<nav class="main" id="nav">
+<a href="index.html" data-i18n="nav.home">Home</a>
+<a href="features.html" data-i18n="nav.features">Features</a>
+<a href="download.html" data-i18n="nav.download">Download</a>
+<a href="documentation.html" data-i18n="nav.docs">Documentation</a>
+<a href="changelog.html" data-i18n="nav.changelog">Changelog</a>
+<a href="about.html" data-i18n="nav.about">About</a>
+</nav>
+<div class="lang" role="group" aria-label="Language" data-i18n-aria="lang.label"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="ru" aria-pressed="false">RU</button></div>
+<button class="menu" type="button" aria-label="Menu" data-i18n-aria="menu" aria-expanded="false" aria-controls="nav"><span class="bars"></span></button>
+</div></header>
+<main>
+<div class="wrap page-head"><h1 data-i18n="fq.title">FAQ</h1><p data-i18n="fq.lead">Short answers about Prism+. If something is not covered, it is probably not decided yet.</p></div>
+<section class="blk"><div class="wrap">
+<details class="qa"><summary data-i18n="q1">What is Prism+?</summary><div class="ans"><p data-i18n="a1">A community-driven Minecraft launcher based on Prism Launcher. It keeps Prism's proven features and adds a Local Server Manager and a Bedrock module as separate modules.</p></div></details>
+<details class="qa"><summary data-i18n="q2">Can I download it now?</summary><div class="ans"><p data-i18n="a2">Not yet: there is no public release. When one exists, its files and SHA-256 checksums will be listed on the Download page.</p><a class="ans-link" href="download.html" data-i18n="nav.download">Download</a></div></details>
+<details class="qa"><summary data-i18n="q3">Is it just a renamed Prism Launcher?</summary><div class="ans"><p data-i18n="a3">No. Prism is the base, but Prism+ adds its own modules with their own data and registries, and its own identity. Adapted ideas are re-implemented independently and licenses are respected.</p></div></details>
+<details class="qa"><summary data-i18n="q4">Will it change my existing instances?</summary><div class="ans"><p data-i18n="a4">It is designed not to. Instances are never altered without your action, and rollback ability is required before risky changes. Compatibility details will be documented with the first release.</p></div></details>
+<details class="qa"><summary data-i18n="q5">Will Bedrock Edition be supported?</summary><div class="ans"><p data-i18n="a5">A separate Bedrock module is planned: it does not exist yet and is at the research stage. Bedrock will never be launched through the Java runtime.</p></div></details>
+<details class="qa"><summary data-i18n="q6">What is the Local Server Manager?</summary><div class="ans"><p data-i18n="a6">A module for creating and running local Java or Bedrock servers: version and core choice, RAM, properties, console, logs, files and backups. It is in development; not everything listed exists yet.</p><a class="ans-link" href="roadmap.html" data-i18n="nav.roadmap">Roadmap</a></div></details>
+<details class="qa"><summary data-i18n="q7">Which operating systems are supported?</summary><div class="ans"><p data-i18n="a7">Target platforms and their current status are on the Supported platforms page. Nothing counts as supported until builds are verified.</p><a class="ans-link" href="platforms.html" data-i18n="nav.platforms">Supported platforms</a></div></details>
+<details class="qa"><summary data-i18n="q8">Is Prism+ affiliated with Mojang or Microsoft?</summary><div class="ans"><p data-i18n="a8">No. They do not sponsor or endorse it, and it is not an official Minecraft product. See the disclaimer.</p><a class="ans-link" href="disclaimer.html" data-i18n="nav.disclaimer">Disclaimer</a></div></details>
+<details class="qa"><summary data-i18n="q9">How do I verify a download?</summary><div class="ans"><p data-i18n="a9">Compare the SHA-256 checksum of your file with the one listed next to it on the Download page. Commands for Windows, Linux and macOS are there too.</p><a class="ans-link" href="download.html#verify" data-i18n="ctx.verify">How to verify a download</a></div></details>
+<details class="qa"><summary data-i18n="q10">How do I report a security problem?</summary><div class="ans"><p data-i18n="a10">Please do not post it publicly. See the security policy for how to report responsibly.</p><a class="ans-link" href="security.html" data-i18n="nav.security">Security policy</a></div></details>
+<details class="qa"><summary data-i18n="q11">Which licenses apply?</summary><div class="ans"><p data-i18n="a11">Prism+ builds on Prism Launcher and follows its GPL-3.0 licensing; this website is MIT. Details are on the Credits &amp; licenses page.</p><a class="ans-link" href="credits.html" data-i18n="nav.credits">Credits &amp; licenses</a></div></details>
+<details class="qa"><summary data-i18n="q12">Where can I follow progress?</summary><div class="ans"><p data-i18n="a12">On the Roadmap for the planned order of work, and on the Changelog for what has been done.</p><a class="ans-link" href="changelog.html" data-i18n="nav.changelog">Changelog</a></div></details>
+</div></section>
+</main>
+<footer class="site"><div class="wrap">
+<div class="fcols">
+<div><strong data-i18n="fc.project">Project</strong><a href="roadmap.html" data-i18n="nav.roadmap">Roadmap</a><a href="faq.html" data-i18n="nav.faq">FAQ</a><a href="platforms.html" data-i18n="nav.platforms">Supported platforms</a></div>
+<div><strong data-i18n="fc.legal">Legal</strong><a href="disclaimer.html" data-i18n="nav.disclaimer">Disclaimer</a><a href="credits.html" data-i18n="nav.credits">Credits &amp; licenses</a><a href="security.html" data-i18n="nav.security">Security policy</a></div>
+<div><strong>Prism+</strong><span class="fine" data-i18n="f.tag">Community-driven Minecraft launcher based on Prism Launcher.</span><a href="https://github.com/MinosPrimeOrig/PrismPlus-Website" rel="noopener">GitHub</a></div>
+</div>
+<p class="fine" data-i18n="f.disc">Prism+ is an independent community project. It is not an official Minecraft product, is not sponsored or endorsed by, and is not affiliated with Mojang Studios or Microsoft. Minecraft is a trademark of Mojang Studios.</p>
+<p class="fine" data-i18n="f.legal">© 2026 Minos_Team. Website licensed under MIT. Prism+ is an independent community project.</p>
+</div></footer>
+</body>
+</html>
