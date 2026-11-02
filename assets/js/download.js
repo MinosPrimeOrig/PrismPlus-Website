@@ -57,7 +57,7 @@
       var table = el('table', 'tbl');
       var head = el('tr');
       [['dl.th.plat', 'Platform'], ['dl.th.arch', 'Architecture'], ['dl.th.file', 'File'],
-       ['dl.th.size', 'Size'], ['dl.th.sha', 'SHA-256'], ['dl.th.get', 'Download']].forEach(function (c) {
+       ['dl.th.size', 'Size'], ['dl.th.sha', 'SHA-256'], ['dl.get', 'Download']].forEach(function (c) {
         head.appendChild(el('th', null, T(c[0], c[1])));
       });
       table.appendChild(head);
