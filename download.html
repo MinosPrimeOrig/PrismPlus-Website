@@ -4,11 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title data-i18n="t.download">Download — Prism+</title>
-<meta name="description" content="Download status for Prism+ launcher.">
+<meta name="description" content="Prism+ Download Center: releases, platforms and SHA-256 checksums.">
 <meta name="theme-color" content="#0b0b10">
 <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/extra.css">
 <script src="assets/js/main.js" defer></script>
+<script src="assets/js/i18n-ext.js" defer></script>
+<script src="assets/js/releases.js" defer></script>
+<script src="assets/js/download.js" defer></script>
 </head>
 <body>
 <header class="site"><div class="wrap bar">
@@ -25,14 +29,32 @@
 <button class="menu" type="button" aria-label="Menu" data-i18n-aria="menu" aria-expanded="false" aria-controls="nav"><span class="bars"></span></button>
 </div></header>
 <main>
-<div class="wrap page-head"><h1 data-i18n="d.title">Download</h1><p data-i18n="d.lead">Prism+ is in early development, so there is no public release yet.</p></div>
+<div class="wrap page-head"><h1 data-i18n="dl.title">Download Center</h1><p data-i18n="dl.lead">Releases, platforms and checksums in one place. There is no public release yet.</p></div>
 <section class="blk"><div class="wrap">
-<div class="card"><h3 data-i18n="d.nr">No downloads available yet</h3><p data-i18n="d.nrp">Stable builds will be published here and on GitHub Releases when the first release is ready. We don't ship placeholders or fake installers.</p></div>
-<div class="grid" style="margin-top:16px">
+<h2 data-i18n="dl.rel">Releases</h2>
+<div id="rel-empty" class="card"><h3 data-i18n="d.nr">No downloads available yet</h3><p data-i18n="d.nrp">Stable builds will be published here and on GitHub Releases when the first release is ready. We don't ship placeholders or fake installers.</p></div>
+<div id="rel-list" hidden></div>
+</div></section>
+<section class="blk"><div class="wrap">
+<h2 data-i18n="dl.plat">Platforms</h2>
+<div class="grid">
 <div class="card"><h3>Windows</h3><span class="chip" data-i18n="d.soon">Not available yet</span></div>
 <div class="card"><h3>Linux</h3><span class="chip" data-i18n="d.soon">Not available yet</span></div>
 <div class="card"><h3>macOS</h3><span class="chip" data-i18n="d.soon">Not available yet</span></div>
 </div>
+<p class="note"><a href="platforms.html" data-i18n="nav.platforms">Supported platforms</a></p>
+</div></section>
+<section class="blk" id="verify"><div class="wrap">
+<h2 data-i18n="dl.v">Verify your download</h2>
+<p class="note" style="margin-top:0" data-i18n="dl.vp">Every release lists a SHA-256 checksum for each file. After downloading, compute the checksum yourself and compare it with the listed value. If they differ, delete the file and do not run it.</p>
+<p class="lbl" data-i18n="dl.vw">Windows (PowerShell)</p>
+<pre class="code">Get-FileHash .\FILENAME -Algorithm SHA256</pre>
+<p class="lbl" data-i18n="dl.vl">Linux</p>
+<pre class="code">sha256sum FILENAME</pre>
+<p class="lbl" data-i18n="dl.vm">macOS</p>
+<pre class="code">shasum -a 256 FILENAME</pre>
+<p class="note" data-i18n="dl.vn">A matching checksum shows the file arrived intact. It proves where the file came from only if you got the checksum from this site or the project's GitHub Releases.</p>
+<p class="note"><a href="security.html" data-i18n="nav.security">Security policy</a></p>
 </div></section>
 <section class="blk"><div class="wrap">
 <h2 data-i18n="d.src">Build from source</h2>
@@ -45,9 +67,14 @@
 <a href="https://prismlauncher.org" rel="noopener" data-i18n="d.altlink">Visit prismlauncher.org</a>
 </div></section>
 </main>
-<footer class="site"><div class="wrap foot">
-<p data-i18n="f.tag">Community-driven Minecraft launcher based on Prism Launcher.</p>
-<p><span data-i18n="f.legal">© 2026 Minos_Team. Website licensed under MIT. Prism+ is an independent community project.</span> <a href="https://github.com/MinosPrimeOrig/PrismPlus-Website" rel="noopener">GitHub</a></p>
+<footer class="site"><div class="wrap">
+<div class="fcols">
+<div><strong data-i18n="fc.project">Project</strong><a href="roadmap.html" data-i18n="nav.roadmap">Roadmap</a><a href="faq.html" data-i18n="nav.faq">FAQ</a><a href="platforms.html" data-i18n="nav.platforms">Supported platforms</a></div>
+<div><strong data-i18n="fc.legal">Legal</strong><a href="disclaimer.html" data-i18n="nav.disclaimer">Disclaimer</a><a href="credits.html" data-i18n="nav.credits">Credits &amp; licenses</a><a href="security.html" data-i18n="nav.security">Security policy</a></div>
+<div><strong>Prism+</strong><span class="fine" data-i18n="f.tag">Community-driven Minecraft launcher based on Prism Launcher.</span><a href="https://github.com/MinosPrimeOrig/PrismPlus-Website" rel="noopener">GitHub</a></div>
+</div>
+<p class="fine" data-i18n="f.disc">Prism+ is an independent community project. It is not an official Minecraft product, is not sponsored or endorsed by, and is not affiliated with Mojang Studios or Microsoft. Minecraft is a trademark of Mojang Studios.</p>
+<p class="fine" data-i18n="f.legal">© 2026 Minos_Team. Website licensed under MIT. Prism+ is an independent community project.</p>
 </div></footer>
 </body>
 </html>

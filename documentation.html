@@ -8,7 +8,9 @@
 <meta name="theme-color" content="#0b0b10">
 <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/extra.css">
 <script src="assets/js/main.js" defer></script>
+<script src="assets/js/i18n-ext.js" defer></script>
 </head>
 <body>
 <header class="site"><div class="wrap bar">
@@ -37,12 +39,19 @@
 <section id="architecture"><h2 data-i18n="dc.s3">Architecture principles</h2>
 <ul><li data-i18n="dc.a1">Prism stays the base; proven features are kept.</li><li data-i18n="dc.a2">C++ and Qt only, following Prism's code style.</li><li data-i18n="dc.a3">New modules are standalone: their own registries and data directories, not BaseInstance subclasses.</li><li data-i18n="dc.a4">Bedrock and Server Manager stay separate from Java launch logic.</li><li data-i18n="dc.a5">Maximum compatibility with upstream Prism, and rollback ability before risky changes.</li></ul></section>
 <section id="building"><h2 data-i18n="dc.s4">Building</h2><p data-i18n="dc.b.p">Prism+ uses the same C++, Qt and CMake toolchain as Prism Launcher.</p><p data-i18n="dc.b.p2">Detailed guides (BUILD, DEPENDENCIES, TROUBLESHOOTING and TESTING) are planned and will be linked here.</p></section>
-<section id="licensing"><h2 data-i18n="dc.s5">Licensing</h2><p data-i18n="dc.l.p">The launcher follows the GPL-3.0 licensing of its upstream, and a separate provenance document records the origin of adapted ideas. This website is released under the MIT License.</p></section>
+<section id="licensing"><h2 data-i18n="dc.s5">Licensing</h2><p data-i18n="dc.l.p">The launcher follows the GPL-3.0 licensing of its upstream, and a separate provenance document records the origin of adapted ideas. This website is released under the MIT License.</p>
+<p><a href="credits.html" data-i18n="nav.credits">Credits &amp; licenses</a></p></section>
+<div class="links"><a href="faq.html" data-i18n="ctx.faq">Read the FAQ</a><a href="security.html" data-i18n="nav.security">Security policy</a><a href="roadmap.html" data-i18n="nav.roadmap">Roadmap</a></div>
 </div>
 </main>
-<footer class="site"><div class="wrap foot">
-<p data-i18n="f.tag">Community-driven Minecraft launcher based on Prism Launcher.</p>
-<p><span data-i18n="f.legal">© 2026 Minos_Team. Website licensed under MIT. Prism+ is an independent community project.</span> <a href="https://github.com/MinosPrimeOrig/PrismPlus-Website" rel="noopener">GitHub</a></p>
+<footer class="site"><div class="wrap">
+<div class="fcols">
+<div><strong data-i18n="fc.project">Project</strong><a href="roadmap.html" data-i18n="nav.roadmap">Roadmap</a><a href="faq.html" data-i18n="nav.faq">FAQ</a><a href="platforms.html" data-i18n="nav.platforms">Supported platforms</a></div>
+<div><strong data-i18n="fc.legal">Legal</strong><a href="disclaimer.html" data-i18n="nav.disclaimer">Disclaimer</a><a href="credits.html" data-i18n="nav.credits">Credits &amp; licenses</a><a href="security.html" data-i18n="nav.security">Security policy</a></div>
+<div><strong>Prism+</strong><span class="fine" data-i18n="f.tag">Community-driven Minecraft launcher based on Prism Launcher.</span><a href="https://github.com/MinosPrimeOrig/PrismPlus-Website" rel="noopener">GitHub</a></div>
+</div>
+<p class="fine" data-i18n="f.disc">Prism+ is an independent community project. It is not an official Minecraft product, is not sponsored or endorsed by, and is not affiliated with Mojang Studios or Microsoft. Minecraft is a trademark of Mojang Studios.</p>
+<p class="fine" data-i18n="f.legal">© 2026 Minos_Team. Website licensed under MIT. Prism+ is an independent community project.</p>
 </div></footer>
 </body>
 </html>

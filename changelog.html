@@ -8,7 +8,9 @@
 <meta name="theme-color" content="#0b0b10">
 <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/extra.css">
 <script src="assets/js/main.js" defer></script>
+<script src="assets/js/i18n-ext.js" defer></script>
 </head>
 <body>
 <header class="site"><div class="wrap bar">
@@ -28,15 +30,22 @@
 <div class="wrap page-head"><h1 data-i18n="c.title">Changelog</h1><p data-i18n="c.lead">Milestones so far. Version numbers will appear with the first release.</p></div>
 <section class="blk"><div class="wrap">
 <ol class="tl">
+<li><span class="badge base" data-i18n="c.st.done">Done</span><time datetime="2026-11-02">2026-11-02</time><h3 data-i18n="c4t">Website — legal pages, roadmap and Download Center</h3><p data-i18n="c4p">Added the disclaimer, roadmap, FAQ, security policy, credits and licenses, supported platforms, and a Download Center with version, platform and checksum support.</p></li>
 <li><span class="badge base" data-i18n="c.st.done">Done</span><time datetime="2026-11-02">2026-11-02</time><h3 data-i18n="c1t">Website — initial version</h3><p data-i18n="c1p">First version of this site: six pages, English and Russian, responsive layout.</p></li>
 <li><span class="badge dev" data-i18n="c.st.prog">In progress</span><h3 data-i18n="c2t">Servers MVP — step 1</h3><p data-i18n="c2p">Server profile and server registry are written as a standalone module. Tests are pending.</p></li>
 <li><span class="badge base" data-i18n="c.st.done">Done</span><h3 data-i18n="c3t">Phase 0 — Foundation</h3><p data-i18n="c3p">Project skeleton, provenance documents and a build check. The build and all 24 of 24 tests passed (tag plus-phase-0).</p></li>
 </ol>
+<div class="links"><a href="roadmap.html" data-i18n="ctx.road">See the roadmap</a></div>
 </div></section>
 </main>
-<footer class="site"><div class="wrap foot">
-<p data-i18n="f.tag">Community-driven Minecraft launcher based on Prism Launcher.</p>
-<p><span data-i18n="f.legal">© 2026 Minos_Team. Website licensed under MIT. Prism+ is an independent community project.</span> <a href="https://github.com/MinosPrimeOrig/PrismPlus-Website" rel="noopener">GitHub</a></p>
+<footer class="site"><div class="wrap">
+<div class="fcols">
+<div><strong data-i18n="fc.project">Project</strong><a href="roadmap.html" data-i18n="nav.roadmap">Roadmap</a><a href="faq.html" data-i18n="nav.faq">FAQ</a><a href="platforms.html" data-i18n="nav.platforms">Supported platforms</a></div>
+<div><strong data-i18n="fc.legal">Legal</strong><a href="disclaimer.html" data-i18n="nav.disclaimer">Disclaimer</a><a href="credits.html" data-i18n="nav.credits">Credits &amp; licenses</a><a href="security.html" data-i18n="nav.security">Security policy</a></div>
+<div><strong>Prism+</strong><span class="fine" data-i18n="f.tag">Community-driven Minecraft launcher based on Prism Launcher.</span><a href="https://github.com/MinosPrimeOrig/PrismPlus-Website" rel="noopener">GitHub</a></div>
+</div>
+<p class="fine" data-i18n="f.disc">Prism+ is an independent community project. It is not an official Minecraft product, is not sponsored or endorsed by, and is not affiliated with Mojang Studios or Microsoft. Minecraft is a trademark of Mojang Studios.</p>
+<p class="fine" data-i18n="f.legal">© 2026 Minos_Team. Website licensed under MIT. Prism+ is an independent community project.</p>
 </div></footer>
 </body>
 </html>
